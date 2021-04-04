@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:src="@drawable/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"/>
+    <EditText
+        android:id="@+id/edtEmail"
+        android:hint="Email"
+        android:background="@drawable/edit_text_background"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/edtPassword"
+        android:hint="Password"
+        android:background="@drawable/edit_text_background"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"/>
+    <Button
+        android:id="@+id/btnLogin"
+        android:text="Log in"
+        android:background="@drawable/button_background"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:text="Don't have an account? Sign up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

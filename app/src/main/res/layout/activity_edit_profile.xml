@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar"
+        android:background="?android:attr/windowBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:background="?android:attr/windowBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/imgClose"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/ic_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true" />
+
+                <TextView
+                    android:layout_marginLeft="12dp"
+                    android:text="Edit Profile"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_toRightOf="@+id/imgClose"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="SAVE"
+                    android:layout_marginRight="12dp"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:id="@+id/tvSave"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/imgProfile" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Change Photo"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvChange" />
+        <EditText
+            android:layout_marginTop="20dp"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimary"
+            android:hint= "Full Name"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtFullName" />
+        <EditText
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:hint= "Username"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtUsername" />
+
+        <EditText
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:hint= "Bio"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtBio" />
+
+    </LinearLayout>
+</LinearLayout>
